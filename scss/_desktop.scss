@@ -1,0 +1,31 @@
+@mixin media-desktop {
+  @media screen and (min-width: 992px) {
+    body {
+      background-image: url("../docs/images/bg-desktop.svg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      gap: 3.5rem;
+      .img-container,
+      .text-container {
+        width: 50%;
+        max-width: 700px;
+      }
+      .text-container {
+        margin-top: 1.5rem;
+        text-align: start;
+      }
+    }
+
+    footer {
+      justify-content: end;
+      margin-right: 4rem;
+    }
+  }
+}
